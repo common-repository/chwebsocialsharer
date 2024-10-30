@@ -1,0 +1,7 @@
+.chwebr-rwmb-select-tree {
+	display: inline-block;
+}
+
+.chwebr-rwmb-select-tree.hidden {
+	display: none;
+}

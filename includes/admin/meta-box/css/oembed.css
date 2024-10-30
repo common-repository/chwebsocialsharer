@@ -1,0 +1,11 @@
+.chwebr-rwmb-oembed-wrapper .spinner {
+	float: none;
+	vertical-align: top;
+	display: inline-block;
+}
+.chwebr-rwmb-oembed-wrapper .embed-code {
+	margin-top: 1em;
+}
+.chwebr-rwmb-oembed-wrapper .embed-code iframe {
+	max-width: 100%;
+}

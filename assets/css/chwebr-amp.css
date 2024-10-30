@@ -1,0 +1,420 @@
+
+/* START Delete text for buttons behind Plus sign */
+ .chwebr-buttons .secondary-shares a .text{
+        text-indent: -9999px;
+        line-height: 0px;
+        display: block;
+        } 
+ .chwebr-buttons .secondary-shares a .text:after {
+        content: " ";
+        text-indent: 0;
+        font-size:13px;
+        display: block;
+    }
+ .chwebr-buttons .secondary-shares a {
+        min-width:0;
+        font-size: 0px;
+    }
+  .chwebr-buttons .secondary-shares a .icon:before {
+        margin-right:0px;
+    }
+/* END */
+
+/* hide class */
+.chwebr-buttons .chwebr-hide {
+    display:none;
+}
+
+/* Adjustable specifications */
+
+/* Hover effect */
+[class^="chwebicon-"]:hover, [class*=" chwebicon-"]:hover {
+opacity: 0.8;
+}
+/* Icon Color */
+[class^="chwebicon-"] .icon, [class*=" chwebicon-"] {
+color:#ffffff;
+}
+/* Font color */
+[class^="chwebicon-"] .text, [class*=" chwebicon-"] .text {
+    color:#ffffff;
+}
+/* General visual settings,like border, shadow, shine etc. */
+ [class^="chwebicon-"], [class*=" chwebicon-"] .onoffswitch-label{
+        font-size:15px;
+        border-radius: 0px;
+        cursor: pointer;
+ }
+ /* Icon visual appearance */
+ [class^="chwebicon-"] .icon:before, [class*=" chwebicon-"] .icon:before, .chwebicon-share:before {
+  font-family: "chwebr-font";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  font-size:16px;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.7em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none; 
+  /* fix buttons height, for twitter bootstrap */
+  /*line-height: 1em;*/
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  /*margin-left: 0.7em;*/
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  
+  /* Reset margin-top for twitter bootstrap */
+  margin-top:0px;
+  /* For IE 8 Important */
+  float:left;
+}
+/* Icon definitions */
+.chwebicon-facebook .icon:before { content: '\e800'; } /* '' */
+.chwebicon-google .icon:before { content: '\e801'; } /* '' */
+.chwebicon-pinterest .icon:before { content: '\e802'; } /* '' */
+.chwebicon-linkedin .icon:before { content: '\e803'; } /* '' */
+.chwebicon-digg .icon:before { content: '\e804'; } /* '' */
+.chwebicon-reddit .icon:before { content: '\e805'; } /* '' */
+.chwebicon-stumbleupon .icon:before { content: '\e806'; } /* '' */
+.chwebicon-twitter .icon:before { content: '\e807'; } /* '' */
+.chwebicon-mail .icon:before { content: '\e808'; } /* '' */
+.chwebicon-vk .icon:before { content: '\e809'; } /* '' */
+.chwebicon-print .icon:before { content: '\e80a'; } /* '' */
+.chwebicon-delicious .icon:before { content: '\e80b'; } /* '' */
+.chwebicon-buffer .icon:before { content: '\e80c'; } /* '' */
+.chwebicon-heart .icon:before { content: '\e80d'; } /* '' */
+.chwebicon-weibo .icon:before { content: '\e80e'; } /* '' */
+.chwebicon-pocket .icon:before { content: '\e80f'; } /* '' */
+.chwebicon-xing .icon:before { content: '\e810'; } /* '' */
+.chwebicon-flattr .icon:before { content: '\e811'; } /* '' */
+.chwebicon-odnoklassniki .icon:before { content: '\e812'; } /* '' */
+.chwebicon-tumblr .icon:before { content: '\e813'; } /* '' */
+.chwebicon-subscribe .icon:before { content: '\e808'; } /* '' */
+.chwebicon-whatsapp .icon:before { content: '\e814'; }
+.chwebicon-meneame .icon:before { content: '\e815'; } /* '' */
+.chwebicon-managewp .icon:before { content: '\e816'; } /* '' */
+.chwebicon-mailru .icon:before { content: '\E819'; } /* '' */
+.chwebicon-line .icon:before { content: '\E81A'; } /* '' */
+.chwebicon-yummly .icon:before { content: '\E81B'; } /* '' */
+.chwebicon-frype .icon:before { content: '\e81c'; } /* '' */
+.chwebicon-skype .icon:before { content: '\e81d'; } /* '' */
+.chwebicon-telegram .icon:before { content: '\e81f'; } /* '' */
+.chwebicon-hackernews .icon:before { content: '\e820'; } /* '' */
+.chwebicon-flipboard .icon:before { content: '\e821'; } /* '' */
+
+.chwebicon-share:before { content: '\e81E'; } /* '' */
+
+/* Upper and lower distance share button to next elements  */
+.chwebr-container{
+    padding-top: 10px;
+    padding-bottom:10px;
+} 
+/* 
+ *  General size of all buttons 
+ *  low cardinality so we can override this with custom css easily 
+ */
+.chwebr-buttons a{
+    min-width: 177px;
+}
+
+/* General design of all buttons */
+.chwebr-box .chwebr-buttons a{
+    padding:13px;
+    margin-right: 3px;
+    margin-bottom:3px;
+    float:left;
+    text-decoration: none;
+    border:0px;
+    box-shadow: none;
+}
+
+/* Click on plus sign adds this class to switch the float */
+.chwebr-buttons .float-right {
+    float:right;
+}
+.chwebr-buttons .float-left {
+    float:left;
+}
+
+/* Social networks main background color*/
+.chwebicon-facebook{
+background: #2d5f9a;
+}
+.chwebicon-twitter{
+background: #00c3f3;
+}
+.chwebicon-google{
+background: #d73d32;
+}
+.chwebicon-subscribe{
+background: #fff120;
+}
+.chwebicon-pinterest{
+background: #cd252b;
+}
+.chwebicon-linkedin{
+background: #2ba3e1;
+}
+.chwebicon-digg{
+background: #1b5791;
+}
+.chwebicon-stumbleupon{
+background: #eb4723;
+}
+.chwebicon-vk{
+background: #5d83aa;
+}
+.chwebicon-mail{
+background: #888888;
+}
+.chwebicon-print{
+background: #666666;
+}
+.chwebicon-reddit{
+background: #333333;
+}
+.chwebicon-delicious{
+background: #3399ff;
+}
+.chwebicon-weibo{
+background: #ed1c24;
+}
+.chwebicon-pocket{
+background: #ee4055;
+}
+.chwebicon-xing{
+background: #135a5b;
+}
+.chwebicon-flattr{
+background: #8cb55b;
+}
+.chwebicon-odnoklassniki{
+background: #f4731c;
+}
+.chwebicon-managewp{
+background: #056cad;
+}
+.chwebicon-tumblr{
+background: #2c4762;
+}
+.chwebicon-meneame{
+background: #ff7d12;
+}
+.chwebicon-whatsapp{
+background: #1d9e11;
+}
+.chwebicon-buffer{
+background: #000000;
+}
+
+.chwebicon-mailru{
+background: #044b89;
+}
+.chwebicon-line{
+background: #1dcd00;
+}
+
+.chwebicon-yummly{
+background: #e16120;
+}
+.chwebicon-frype{
+background: #ff6600;
+}
+
+.chwebicon-skype{
+background: #00afef;
+}
+
+.chwebicon-telegram{
+background: #1d94d3;
+}
+
+.chwebicon-hackernews{
+background: #ff6600;
+}
+.chwebicon-flipboard{
+background: #b31f17;
+}
+
+.chwebicon-buffer .text, chwebicon-buffer .icon{
+color: #ffffff;
+}
+/* Overwrite text color for subscribe button */
+.chwebicon-subscribe .text, 
+.chwebicon-subscribe .icon {
+color: #000000;
+}
+/* Define Share count number */
+.chwebr-count {
+display: block;
+padding-bottom: 0px;
+font-size: 43px;
+font-weight: bold;
+font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+color: #7FC04C;
+border: #FFF solid 0px;
+text-align: center;
+margin-right: 10px;
+margin-top: 10px;
+float: left;
+line-height: 13px;
+}
+/* Define Share text below share count number */
+.chwebr-sharetext {
+font-size:11px;
+font-family:Arial,sans-serif;
+color:#8A8C8E;
+}
+/* Define Subscribe toggle container */
+.chwebr-toggle-container {
+    display:none;
+    padding: 11px 2% 8px;
+    border: 10px solid #FFF120;
+    position: relative;
+    margin-bottom:10px;
+    margin-top:0px;
+}
+
+
+/* IMPORTANT: DO NOT EDIT BELOW THIS LINE */
+
+/* Position */
+ [class^="chwebicon-"], [class*=" chwebicon-"]{
+        position: relative;
+        display: inline-block;
+ }
+ 
+[class^="chwebicon-"] .text, [class*=" chwebicon-"] .text {
+    padding:0px;
+    margin:0px;
+}
+
+ [class^="chwebicon-"] .text:after, [class*=" chwebicon-"] .text:after{
+        line-height: 10px;
+ }
+ 
+/* IMPORTANT: DO NOT EDIT BELOW THIS LINE */
+
+/* Important to reset global body line-height */
+.chwebr-box {
+    /*height:49px;*/
+    line-height: 1;
+}
+.chwebr-count > counts {
+    clear:both;
+}
+
+.onoffswitch {
+    position: relative; 
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    display: inline-block;
+    float: left;
+    margin-right: 3px;
+    margin-bottom:3px;
+    margin-left: 0px;
+    cursor: pointer;
+    background-color: #C5C5C5; color: #FFFFFF;
+    width: 42px;
+    height: 42px; 
+    line-height: 42px;
+    text-align: center;
+}
+
+.onoffswitch:before {
+    content: "+";
+    /*padding-left: 12px;
+    padding-top: 1px;*/
+    display: inline-block;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: arial;
+    vertical-align: middle;
+}
+
+.onoffswitch2 {
+    position: relative; 
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    display: inline-block;
+    float: left;
+    margin-right: 3px;
+    margin-bottom:3px;
+    margin-left: 0px;
+    cursor: pointer;
+    background-color: #C5C5C5; color: #FFFFFF;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.onoffswitch2:before {
+    content: "-";
+    /*padding-left: 15px;
+    padding-top: 5px;*/
+    display: inline-block;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: arial;
+    vertical-align: super;
+}
+
+.widget_chwebr_mostshared_posts_widget li{
+    padding: 0.4688em 0;
+    list-style: none;
+}
+
+.widget_chwebr_mostshared_posts_widget li:first-child {
+    border-top: 0;
+    padding-top: 0;
+}
+
+
+/* Smartphones (portrait) (iPhone 4 / 5) No text buttons  ----------- */
+@media only screen and (max-width: 568px) {
+    [class^="chwebicon-"] .text, [class*=" chwebicon-"] .text{
+        text-indent: -9999px;
+        line-height: 0px;
+        display: block;
+        } 
+    [class^="chwebicon-"] .text:after, [class*=" chwebicon-"] .text:after {
+        content: "";
+        text-indent: 0;
+        font-size:13px;
+        display: block;
+    }
+    [class^="chwebicon-"], [class*=" chwebicon-"] {
+        text-align: center;
+    }
+    [class^="chwebicon-"] .icon:before, [class*=" chwebicon-"] .icon:before{
+        float:none;
+        margin-right: 0;
+    }
+    .chwebr-buttons a{
+       margin-right: 3px;
+       margin-bottom:3px;
+       min-width: 0;
+       width: 41px;
+    }
+
+    .onoffswitch, 
+    .onoffswitch-inner:before, 
+    .onoffswitch-inner:after 
+    .onoffswitch2,
+    .onoffswitch2-inner:before, 
+    .onoffswitch2-inner:after  {
+        margin-right: 0px;
+        width: 41px;
+    }
+    
+}
